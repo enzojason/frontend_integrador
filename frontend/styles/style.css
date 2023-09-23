@@ -1,0 +1,116 @@
+body {
+	background-color: grey;
+	margin: 0;
+}
+.main {
+	margin-left:37%;
+	background-color: dimgrey;
+}
+.columna_izquierda {
+	position: absolute;
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	background-color: brown;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.perfil {	
+	margin-top: auto;
+	float: right;
+	width: 60px;
+}	
+
+.dropdown {
+	width: 80px;
+	display: inline-block;
+	position: relative;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 200px;
+	left:105%;
+	top:0;
+	overflow: auto;
+	background-color: rgba(255, 0, 0, 0);
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+	position: absolute;
+
+}
+.dropdown-content button {
+	display: block;
+	color: #000000;
+	padding: 8px;
+	text-decoration: none;
+}
+.dropdown-content button:hover {
+	color: #FFFFFF;
+	background-color: #00A4BD;
+}
+
+.selector {
+	margin-right: 12px;
+	appearance: none; /* Oculta el control nativo del navegador */
+	overflow: hidden; /* Oculta la barra de desplazamiento si el contenido se desborda */
+	width: 120px; /* Ajusta el ancho según sea necesario */
+	outline: none; 
+	border:2px black solid;
+	background-color: grey;
+}
+
+.selector option{
+	background-color: greenyellow;
+  	border:1px black solid;
+
+}
+
+.columna_canales{
+	z-index:1;
+	background-color: purple;
+	width: 180px;
+	top: 0;
+	margin-left:17%;
+	top:0;
+	bottom: 0;
+	position: fixed;
+	position: absolute;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+}
+
+#contenedor_crear_serv{
+	display: none;
+}
+
+#contenedor_unirse_serv{
+	display: none;
+
+}
+
+#contenedor_crear_canal{
+	display: none;
+}
+
+#seccion_canales{
+	display: none;
+}
+
+#chat {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+#contenedor_chat {
+	display: none;
+}

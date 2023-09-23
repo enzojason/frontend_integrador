@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Chat</title>
+</head>
+<body>
+    <div id="chat">
+        <!-- Aquí aparecerán los mensajes -->
+    </div>
+    <input type="text" id="mensaje" placeholder="Escribe tu mensaje">
+    <button onclick="enviarMensaje()">Enviar</button>
+
+    <script>
+        function enviarMensaje() {
+            // Obtén el mensaje del input
+            var mensaje = document.getElementById("mensaje").value;
+            
+            // Crea un nuevo elemento <div> para representar el mensaje
+            var nuevoMensaje = document.createElement("h1");
+            nuevoMensaje.textContent = mensaje;
+
+            // Agrega el nuevo mensaje al chat
+            document.getElementById("chat").appendChild(nuevoMensaje);
+
+            // Limpia el input
+            document.getElementById("mensaje").value = "";
+        }
+    </script>
+
+<script src="prueba.js"></script>
+</body>
+</html>
