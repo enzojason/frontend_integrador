@@ -1,0 +1,268 @@
+body {
+	background-color: grey;
+	margin: 0;
+}
+.main {
+	background-color: rgb(56, 158, 100);
+	height: 100vh;
+	position: fixed;
+	margin-left: 370px;
+	width: auto;
+	top: 0;
+	bottom: 0;
+}
+#contenido{
+	width: 850px;
+}
+#contenedor_avisos{
+	margin: 0 auto;
+
+}
+.columna_izquierda {
+	position: absolute;
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	background-color:white;
+	display: flex;
+	flex-direction: column;
+	padding-left: 28px;
+	padding-bottom: 10px;
+}
+
+.perfil {	
+	margin-top: auto;
+	float: right;
+	width: 60px;
+	padding-left: 20px;
+}	
+
+.dropdown {
+	width: 80px;
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 200px;
+	left:105%;
+	top:0;
+	overflow: auto;
+	background-color: rgba(255, 0, 0, 0);
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+	position: absolute;
+
+}
+.dropdown-content button {
+	display: block;
+	color: #000000;
+	padding: 8px;
+	text-decoration: none;
+}
+.dropdown-content button:hover {
+	color: #FFFFFF;
+	background-color: #00A4BD;
+}
+
+.selector {
+	margin-right: 12px;
+	margin-left: -13px;
+	appearance: none; /* Oculta el control nativo del navegador */
+	overflow: hidden; /* Oculta la barra de desplazamiento si el contenido se desborda */
+	width: 150px; /* Ajusta el ancho según sea necesario */
+	outline: none; 
+	
+	background-color: white;
+}
+
+.selector option{
+	background-color: plum;
+  	border:1px black solid;
+
+}
+
+.columna_canales{
+	position: fixed;
+	z-index:1;
+	background-color: whitesmoke;
+	width: 190px;
+	top: 0;
+	margin-left:13%;
+	top:0;
+	bottom: 0;
+	position: fixed;
+	position: absolute;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+#agregar_canal{
+	margin-left:15%;
+}
+#lista_canales{
+	margin-left: 15px;
+	margin-top: -20px;
+}
+
+
+#columna_derecha{
+	position: absolute;
+	z-index: 2;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	background-color:coral;
+	display: flex;
+	flex-direction: column;
+	padding-left: 120px;
+	padding-bottom: 10px;
+	border:#000000 2px groove;
+}
+
+
+
+#contenedor_chat{
+	padding: 15px;
+	margin: 80px;
+}
+#chat{
+	padding: 20px;
+}
+
+.contenedor{
+	margin: 150px;
+	width:550px;
+}
+.contenedor h1 {
+	font-size: 50px;
+	margin-left: -120px;
+	margin-top: -100px;
+}
+.contenedor h2{
+	font-size: 30px;
+	margin-top: 105px;
+	margin-left: -20px;
+}
+.contenedor button{
+	width: 100px;
+	margin-left: 110px;
+	margin-top: 20px;;
+	background-color: white;
+	font-size: 17px;
+	padding: 5px;
+}
+.contenedor label{
+	font-size: 20px;
+}
+.contenedor input{
+	height: 30px;
+	width: 350px;
+}
+.contenedor textarea{
+	margin-top: 20px;
+	margin-left: -30px;
+	
+}
+#contenedor_avisos{
+	background-color: beige;
+	margin-top: -35px;
+	padding-bottom: 10px;
+}
+
+#mensaje_main{
+	margin-left: 55px;
+	margin-top: 250px;
+	margin-right: 55px;
+}
+#mensaje_main_canal{
+	margin-left: 25px;
+	margin-top: 250px;
+	margin-right: 55px;
+}
+
+
+#titulo_main{
+	margin-left: 80px;
+}
+#titulo_main_canal{
+	margin-left: 140px;
+	font-size: 80px;
+	margin-top: 30px;
+	
+}
+#imagen_main_canal{
+	margin-left: 70px;
+	margin-top: -120px;
+	width: 60px;
+	height: 60px;
+}
+#descripcion_main_canal{
+	margin-left: 80px;
+	
+}
+#fecha_creacion_main_canal{
+	margin-left: 80px;
+}
+
+#contenedor_crear_serv{
+	display: none;
+}
+
+#contenedor_unirse_serv{
+	display: none;
+
+}
+
+#contenedor_crear_canal{
+	display: none;
+}
+
+#seccion_canales{
+	display: none;
+}
+
+
+#chat {
+    height: 300px;
+    overflow-y: scroll;
+	background-color:white;
+	width:800px;
+	margin-top: -90px;
+	margin-left: -90px;
+	
+}
+#mensaje_nuevo{
+	height: 35px;
+	margin-left: -90px;
+	width: 775px;
+	margin-top: 5px;
+	
+}
+#imagen_enviar{
+	width: 35px;
+}
+#div_imagen_enviar{
+	margin-left: 700px;
+	margin-top: -45px;
+}
+
+#contenedor_chat {
+	display: none;
+}
+
+
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}

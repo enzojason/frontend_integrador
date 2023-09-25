@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+	<title>Inicio</title>
+</head>
+<body>
+ 
+
+<div class="columna_izquierda">
+	<h1>Inicio</h1>
+	<div class="dropdown">
+		<button type="submit"><img src="assets/signo-de-mas.png" width=70px"></button >
+		<div class="dropdown-content">
+			<button id="crear_servidor">Crear Servidor</button>
+			<button id="unirse_servidor">Unirse a uno</button>
+		</div>
+	</div>
+
+	
+	<div>
+		<h3 style="margin-bottom:0;">Servidores:</h3>
+	</div>
+	<div>
+		<select name="lista_servidores" size="14" class="selector" id="lista_servidores">
+			
+		</select>
+	</div>
+
+
+	<div class="perfil">
+		<button type="button" id="perfilButton"><img src="assets/usuario-de-perfil.png" width="60px">Perfil</button>
+	</div>
+</div >
+
+ 
+<div class="main">
+
+	<div id="contenido">	
+		<div id="contenedor_avisos">
+			<h1 id="titulo_main_canal"></h1>
+			<img src="assets/hashtag_rojo.png"  id="imagen_main_canal" style="display: none;">
+			<h1 id="titulo_main" ></h1>
+			
+			<h2 id="mensaje_main"></h2>
+			<i id="mensaje_main_canal" ></i>
+			<h3><b id="descripcion_main_canal"></b></h3>
+			<h3 id="fecha_creacion_main_canal"></h3>
+		</div>
+		
+		
+		<div id="contenedor_chat">
+			<div id="chat" >
+				
+			</div>
+			<input name="usermsg" type="text" id="mensaje_nuevo" size="70" />
+			<div id="div_imagen_enviar">
+				<button type="button" id="enviar_mensaje"><img src="assets/enviar-mensaje.png" id="imagen_enviar"></button>
+			</div>
+		</div>
+
+		</div>
+	
+	<div id="contenedor_crear_serv" class="contenedor">
+		<h1>Nuevo Servidor</h1>
+		<form id="newServForm">
+			<h2>Crear:</h2>
+			<label for="nombre_servidor">Nombre:</label>
+			<input type="text" id="nombre_servidor" name="nombre_servidor" required>
+			<br>
+			<br>
+			
+			<button id="cancel_c" type="button" >Cancelar</button>
+			<button id="crear_serv" type="button" >Crear</button>
+			<br>
+			<div id="message"></div>
+	
+	
+	</div>
+
+	<div id="contenedor_unirse_serv" class="contenedor">
+		<h1>Unirse a un servidor</h1>
+		<form id="joinServForm">
+			<h2>Ingrese el nombre del servidor:</h2>
+			
+			<label for="nombre_servidor_unirse">Nombre:</label>
+			<input type="text" id="nombre_servidor_unirse" name="nombre_servidor_unirse" required>
+			<br>
+			<br>
+			<button id="cancel_u" type="button" >Cancelar</button>
+			<button id="unir_serv" type="button" >Unirse</button>
+			<br>
+			<div id="message_unirse"></div>
+	</div>
+
+	<div id="contenedor_crear_canal" class="contenedor">
+		<h1 >Crear Canal</h1>
+		<form id="createCanalForm">
+			<h2>Ingrese el nombre del Nuevo Canal:</h2>
+			<label for="nombre_canal">Nombre:</label>
+			<input type="text" id="nombre_canal" name="nombre_canal" required>
+			<br>
+			<br>
+			
+			<textarea id="descripcion_canal" name="texto" rows="5" cols="80" required placeholder="Descripcion..."></textarea>
+			<br>
+			<br>
+			<button id="cancel_c" type="button" >Cancelar</button>
+			<button id="crear_canal" type="button" >Crear</button>
+			<br>
+			<div id="message_unirse"></div>
+	</div>
+
+</div>
+
+<div class="columna_canales">
+	<h1 style="margin-left: 20px;">Canales</h1>
+	<div id="seccion_canales">
+		
+		<button id="agregar_canal" type="button"><img src="assets/boton-mas.png" alt="" width="25px"><b>Agregar Canal</b></button>
+		<h3 style="margin-top: 65px; margin-left: 15%;">Canales:</h3>
+		<div>
+			<select name="lista_canales" size="14" class="selector" id="lista_canales">
+				
+			</select>
+		</div>
+	</div>
+	
+	
+</div>
+
+<div id="columna_derecha">
+	<div id="seccion_perfil">
+		<img src="" id="imagen_perfil_columna_derecha" alt="" width="100px" height="100px">
+		<h2 id="nombre_columna_derecha"></h2>
+		<h2 id="apellido_columna_derecha"></h2>
+		<h2 id="email_columna_derecha"></h2>
+	</div>
+	<div id="seccion_perfil_servidor">
+		<h2 id="nombre_servidor_columna_derecha"></h2>
+		<h2 id="rol_servidor_columna_derecha"></h2>
+	</div>
+	<div id="seccion_logout">
+		<button id="cerrar_sesion" type="button"><img src="assets/cerrar-sesion.png" alt="" width="40px">Cerrar Sesion</button>
+	</div>
+</div>
+
+
+
+<script src="servidores.js"></script>
+<script src="canales.js"></script>
+<script src="mensajes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

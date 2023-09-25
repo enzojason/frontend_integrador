@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<link rel="stylesheet" href="styles/profile.css">
+<body>
+<h1 id="titulo">Perfil de Usuario</h1>
+    <div id="mostrar_perfil">
+        <div id="message">
+            
+            <div class="campo"><img src="" id="imagenPerfil" alt="" width="120"></div>
+            <div class="campo"><p><strong>Username:</strong> <span id="username"></span></p></div>
+            <div class="campo"><p><strong>Email:</strong> <span id="email"></span></p></div>
+            <div class="campo"><p><strong>Nombre:</strong> <span id="first_name"></span></p></div>
+            <div class="campo"><p><strong>Apellido:</strong> <span id="last_name"></span></p></div>
+            <button id="logout">Cancelar</button>
+            <button id="actualizar">Actualizar Datos</button>
+        </div>
+    </div>
+    <div id="mostrar_datos">
+ 
+        <form id="form_datos">
+            <div class="campo"></div>
+            <h2>Ingrese nuevos datos</h2>
+            
+            <div class="campo"><label for="username_nuevo">Username:</label>
+            <input type="text" id="username_nuevo" name="username" >
+            </div>
+            <div class="campo"><label for="contrasena_nueva">Contraseña:</label>
+            <input type="password" id="contrasena_nueva" name="contrasena" >
+            </div>
+            <div class="campo"><label for="nombre_nuevo">Nombre:</label>
+            <input type="text" id="nombre_nuevo" name="nombre_usuario" >
+            </div>
+            <div class="campo"><label for="apellido_nuevo">Apellido:</label>
+            <input type="text" id="apellido_nuevo" name="apellido_usuario" >
+            </div>
+            <div class="campo"><label for="email_nuevo">Email:</label>
+            <input type="email" id="email_nuevo" name="email_usuario" >
+            </div>
+            <div class="campo"><form id="formulario-imagen">
+                <h2>Actualizar foto de perfil</h2>
+                <input type="file" id="nueva_imagen" accept="image/*">
+            </div>
+            </form>
+            <br>
+            <br>              
+            <button id="cancel" type="button">Cancelar</button>
+            <button id="save" type="button" >Guardar Cambios</button>
+            <div id="message_ad"></div>
+            <br>
+        </form>
+
+        
+          
+    </div>    
+    
+    <script src="profile.js"></script>
+</body>
+</html>

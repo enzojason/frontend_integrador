@@ -1,0 +1,82 @@
+body{
+    
+    overflow: hidden; 
+    margin:0
+}
+.pelota {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    animation: rebote 15s infinite,moverDerecha 10s infinite;
+}
+
+@keyframes rebote {
+    0%, 100% {
+        bottom: 0;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        bottom: 600px; /* Altura máxima del rebote */
+        animation-timing-function: ease-in;
+    }
+}
+@keyframes moverDerecha {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 50px); /* Mueve hacia la derecha */
+    }
+}
+#titulo {
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 60px;
+}
+
+.form {
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+.form label{
+    margin: 50px;
+    font-size: 20px;
+}
+
+.form button{
+    margin-left: 70px;
+    margin-top: 20px;
+    padding: 10px;
+} 
+.form input{
+    height: 25px;
+    font-size: 15px;
+}
+
+
+.formregister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.formregister label {
+    font-size: 20px;
+}
+.formregister input {
+    font-size: 15px;
+}
+.formregister button{
+    padding: 10px;
+}
